@@ -1,6 +1,6 @@
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Link from "next/link";
+import Button from "@mui/material/Button";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,7 +11,9 @@ export default function Home() {
         >
             <header>Satoru Gojo</header>
             <p>Throughout Earth and Heavens, I alone am the honored one</p>
-            <Link href="/">Check the enemy</Link>
+            <Link href="/">
+                <Button>Check the enemy</Button>
+            </Link>
         </main>
     )
 }
